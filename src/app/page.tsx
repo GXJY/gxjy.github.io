@@ -1,27 +1,31 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900">
-      <div className="max-w-2xl mx-auto px-6 py-12">
-        <header className="mb-12">
-          <h1 className="text-2xl font-light mb-4">BEYOND ONE PLUS</h1>
-          <nav className="flex gap-6 text-sm text-zinc-600">
-            <a href="#essay" className="hover:text-zinc-900 transition-colors">
-              随笔
-            </a>
-            <a href="#projects" className="hover:text-zinc-900 transition-colors">
-              关于
-            </a>
-            <a href="#about" className="hover:text-zinc-900 transition-colors">
-              论文
-            </a>
-          </nav>
-        </header>
-        <main className="space-y-8">
-          <p className="text-zinc-600 leading-relaxed">
-            记录思考，分享想法。
-          </p>
-        </main>
-      </div>
+    <div className="flex min-h-screen flex-col items-center justify-center bg-black text-zinc-400">
+      <main className="flex flex-1 w-full flex-col items-center justify-center gap-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-[0.35em] uppercase text-zinc-200">
+          BEYOND ONE PLUS
+        </h1>
+      </main>
+      <nav className="mb-10 flex items-center justify-center gap-10 text-xs tracking-[0.3em]">
+        <a
+          href="#essay"
+          className="transition-colors duration-300 hover:text-white"
+        >
+          [ 随笔 ]
+        </a>
+        <a
+          href="#projects"
+          className="transition-colors duration-300 hover:text-white"
+        >
+          [ 关于 ]
+        </a>
+        <a
+          href="#about"
+          className="transition-colors duration-300 hover:text-white"
+        >
+          [ 论文 ]
+        </a>
+      </nav>
     </div>
   );
 }
